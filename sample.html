@@ -1,0 +1,2083 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+<img src="ban.png" width="100%">
+ <br>
+<h1 style="text-align:center; color:red"> Sample Paper</h1>
+<h2 style="text-align:center; color:red">Class X</h2>
+<button class="accordion">2020 - 21</button>
+<div class="panel">
+  <table id="customers">
+  						<tr>
+						  <th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Subject</b></font></th>
+						  <th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Sample Question Paper</b></font></th>
+						  <th height="5" vAlign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Marking Scheme</b></font></th>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Science</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Science-SQP.pdf" target="_blank">SQP</a></b></td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Science-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Elements of Book Keeping and Accountancy</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/ElementsBookKeepingAccountancy-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/ElementsBookKeepingAccountancy-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Elements of Business</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/ElementsBusiness-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/ElementsBusiness-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>English (Language & Literature)</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/EnglishL-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/EnglishL-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<!--<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Foundation of Information Technology</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/FoundationInformationTechnology-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td height="5" vAlign="top" align="left" width="250"><b> <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/FoundationInformationTechnology-MS.pdf" target="_blank">MS</a> </b></td>
+						</tr>-->
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Hindi A</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b> <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HindiCourseA-SQP.pdf" target="_blank">SQP</a> </b> </td>
+						  <td height="5" vAlign="top" align="left" width="250"><b> <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HindiCourseA-MS.pdf" target="_blank">MS</a> </b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Hindi B</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b> <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HindiCourseB-SQP.pdf" target="_blank">SQP</a> </b> </td>
+						  <td height="5" vAlign="top" align="left" width="250"><b> <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HindiCourseB-MS.pdf" target="_blank">MS</a> </b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Home Science</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HomeScience-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HomeScience-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Computer Application</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/ComputerApplication-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/ComputerApplication-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<!--<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Information and Communication Technology</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/ICT-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/ICT-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>-->
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Mathematics (Basic)</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/MathsBasic-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/MathsBasic-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Mathematics (Standard)</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/MathsStandard-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/MathsStandard-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Social Science</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/SocialScience-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/SocialScience-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>NCC</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/NCC-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/NCC-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Melodic)</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HindustaniMusicMelodicInstruments-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HindustaniMelodic-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Percussion)</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HindustaniMusicPercussion-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HindustaniMusicPercussion-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Vocal)</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HindustaniMusicVocal-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/HindustaniVocal-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music-Melodic Instruments</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/CarnaticMusicMelodicInstrument-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/CarnaticMusicMelodicInstrument-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music-Percussion Instruments</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/CarnaticMusicPercussion-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/CarnaticMusicPercussion-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music-Vocal</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/CarnaticMusicVocal-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/CarnaticMusicVocal-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Painting</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Painting-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Painting-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Arabic</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Arabic-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Arabic-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Bengali</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Bengali-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Bengali-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Assamese</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Assamese-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Assamese-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Bahasa Melayu</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/BhashaMalyeu-SQP.pdf" target="_blank">SQP</a></b></td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/BahashaMaleyue-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Bhutia</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Bhutia-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Bhutia-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Bodo</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Bodo-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Bodo-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>French</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/French-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/French-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>German</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/German-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/German-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Gujarati</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Gujarati-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Gujarati-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Gurung</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Gurung-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Gurung-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Japanese</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Japanese-SQP.pdf" target="_blank">SQP</a></b></td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Japanese-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Kannada</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Kannada-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Kannada-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Kashmiri</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b>
+			
+			  <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Kashmiri-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Kashmiri-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Lepcha</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Lepcha-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Lepcha-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Limboo</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Limboo-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Limboo-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Malayalam</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Malayalam-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Malayalam-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Manipuri</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Manipuri-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Manipuri-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Mizo</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Mizo-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Mizo-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Marathi</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Marathi-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Marathi-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Nepali</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Nepali-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Nepali-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Odia</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Odia-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Odia-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Persian</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Persian-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Persian-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Punjabi</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Punjabi-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Punjabi-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Rai Language</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/RAI-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/RAI-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Russian</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Russian-SQP.pdf" target="_blank">SQP</a></b></td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Russian-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left"><b>Sanskrit</b></td>
+						  <td height="5" vAlign="top" align="left"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Sanskrit-SQP.pdf" target="_blank">SQP</a></b></td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Sanskrit-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Sherpa</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Sherpa-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Sherpa-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Sindhi</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Sindhi-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Sindhi-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Spanish</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Spanish-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Spanish-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Tamil</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Tamil-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Tamil-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Tamang</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Tamang-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Tamang-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Tangkhul</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Tangkhul-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Tangkhul-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Telugu AP</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/TeluguAndhra-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Telgu-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Telugu Telangana</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/TeluguTelangana-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/TeluguTelengana-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Thai</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Thai-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Thai-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Tibetan</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Tibetan-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/Tibetan-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Urdu A</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/UrduA-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/UrduA-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left" width="250"><b>Urdu B</b></td>
+						  <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/UrduB-SQP.pdf" target="_blank">SQP</a></b> </td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2020_21/UrduB-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+					  </table>
+
+</div>
+
+<button class="accordion">2019 - 20</button>
+<div class="panel">
+<table id="customers">
+					<tr>
+                              <th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Subject</b></font></th>
+                              <th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Sample Question Paper</b></font></th>
+                              <th height="5" vAlign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Marking Scheme</b></font></th>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Science</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Science_SQP.pdf" target="_blank">SQP</a></b></td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Science_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Elements of Book Keeping and Accountancy</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/ElementsBookKeepingAccountancy_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/ElementsBookKeepingAccountancy_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Elements of Business</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/ElementsBusiness_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/ElementsBusiness_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>English (Language & Literature)</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/English-LL_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/English-LL_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <!--<tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Foundation of Information Technology</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/FoundationInformationTechnology_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td height="5" vAlign="top" align="left" width="250"><b> <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/FoundationInformationTechnology_MS.pdf" target="_blank">MS</a> </b></td>
+                            </tr>-->
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Hindi A</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b> <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HindiA_SQP.pdf" target="_blank">SQP</a> </b> </td>
+                              <td height="5" vAlign="top" align="left" width="250"><b> <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HindiA_MS.pdf" target="_blank">MS</a> </b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Hindi B</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b> <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HindiB_SQP.pdf" target="_blank">SQP</a> </b> </td>
+                              <td height="5" vAlign="top" align="left" width="250"><b> <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HindiB_MS.pdf" target="_blank">MS</a> </b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Home Science</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HomeScience_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HomeScience_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Computer Application</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/ComputerApplication_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/ComputerApplication_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <!--<tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Information and Communication Technology</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/ICT_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/ICT_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>-->
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Mathematics (Basic)</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/MathematicsBasic_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/MathematicsBasic_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Mathematics (Standard)</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/MathematicsStandard_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/MathematicsStandard_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Social Science</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/SocialScience_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/SocialScience_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>NCC</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/NCC_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/NCC_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Melodic)</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HindustaniMelodicInstrument_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HindustandiMelodicInstrument_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Percussion)</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HindustaniPercussion_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HindustaniPercussion_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Vocal)</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HindustaniVocal_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/HindustaniVocal_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music-Melodic Instruments</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/CarnaticMelodic_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/CarnaticMelodic_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music-Percussion Instruments</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/CarnaticPercussion_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/CarnaticPercussion_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music-Vocal</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/CarnaticVocal_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/CarnaticVocal_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Painting</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Painting_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Painting_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Arabic</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Arabic_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Arabic_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+							<tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Bengali</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Bengali_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Bengali_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Assamese</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Assamese_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Assamese_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Bahasa Melayu</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/BhashaMalyeu_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/BhashaMalyeu_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Bhutia</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Bhutia_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Bhutia_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Bodo</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Bodo_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Bodo_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>French</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/French_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/French_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>German</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/German_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/German_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Gujarati</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Gujarati_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Gujarati_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Gurung</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Gurung_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Gurung_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Japanese</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Japanese_SQP.pdf" target="_blank">SQP</a></b></td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Japanese_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Kannada</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b>
+			    
+			      <a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Kannada_SQP_X_updated.pdf" target="_blank">Updated SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Kannada_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Lepcha</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Lepcha_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Lepcha_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Limboo</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Limboo_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Limboo_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Malayalam</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Malayalam_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Malayalam_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Manipuri</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Manipuri_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Manipuri_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Mizo</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Mizo_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Mizo_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Marathi</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Marathi_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Marathi_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Nepali</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Nepali_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Nepali_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Odia</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Odia_SQP.PDF" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Odia_MS.PDF" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Persian</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Persian_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Persian_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Punjabi</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Punjabi_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Punjabi_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Rai Language</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/RAI_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/RAI_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Russian</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Russian_SQP.pdf" target="_blank">SQP</a></b></td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Russian_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left"><b>Sanskrit</b></td>
+                              <td height="5" vAlign="top" align="left"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Sanskrit_SQP.pdf" target="_blank">SQP</a></b></td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Sanskrit_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Sherpa</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Sherpa_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Sherpa_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Sindhi</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Sindhi_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Sindhi_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Spanish</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Spanish_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Spanish_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Tamil</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Tamil_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Tamil_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Tamang</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Tamang_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Tangkhul</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Tangkhul_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Tangkhul_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Telugu AP</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Telgu_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Telgu_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Telugu Telangana</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/TeluguTelangana_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/TeluguTelengana_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Thai</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Thai_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Thai_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Tibetan</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Tibetan_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/Tibetan_MS.pdf" target="_blank">MS</a></b></td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Urdu A</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/UrduA_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/UrduA_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                            <tr>
+                              <td height="5" vAlign="top" align="left" width="250"><b>Urdu B</b></td>
+                              <td height="5" vAlign="top" align="left" width="250"><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/UrduB_SQP.pdf" target="_blank">SQP</a></b> </td>
+                              <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/ClassX_2019_20/UrduB_MS.pdf" target="_blank">MS</a></b> </td>
+                            </tr>
+                          </table>
+  
+</div>
+
+<button class="accordion">2018 - 19</button>
+<div class="panel">
+  <table id="customers">
+  <tr>										 
+							
+							<th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Subject</b></font></th>	
+							<th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Sample Question Paper</b></font></th>	
+							<th height="5" vAlign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Marking Scheme</b></font></th>		
+						</tr>	
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>Science</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X_Science_SQP_2018-19.pdf" target="_blank">SQP</a></b></td>
+							 <td>
+							 	<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X_Science_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>						
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>Elements of Book Keeping and Accountancy</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X_Elements_of_book_keeping_and_Accountancy_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X_Elements_of_book_keeping_and_Accountancy_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>Elements of Business</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Elements_Business_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Elements_Business_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>English Communicative</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-ENGLISH_COMM_SQP_2019.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-ENGLISH_COMM_MS_2019.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>English (Language & Literature)</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-English_LANG_LIT_SQP_2019.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-English_LANG_LIT_MS_2019.pdf" target="_blank">MS</a></b></td>
+						</tr> 
+						
+							<!--<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>e-Publishing & e-office</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/e-Publishing-SQP.pdf" target="_blank">SQP</a>								</b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/e-Publishing-MS.pdf" target="_blank">MS</a>								</b>							 </td>
+						</tr>	-->								
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Foundation of Information Technology</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-FIT_SQP 2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250"><b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-FIT_MS-2018-19.pdf" target="_blank">MS</a>								</b></td>
+						</tr>						
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindi A</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Hindi-A-SQP_2018-19.pdf" target="_blank">SQP</a>								</b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Hindi-A-MS_2018-19.pdf" target="_blank">MS</a>								</b>							 </td>
+						</tr>
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindi B</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Hindi-B_SQP_2018-19.pdf" target="_blank">SQP</a>								</b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Hindi-B_MS_2018-19.pdf" target="_blank">MS</a>								</b>							 </td>
+						</tr>
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>Home Science</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Home_Science_SQP-2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Home_Science_MS-2018-19.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Information and Communication Technology</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-ICT-SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-ICT-MS_2018-19.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>	
+						 <tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Mathematics</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Maths_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Maths_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr> 						
+						
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>Social Science</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-SS_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-SS_MS_2018-19.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>NCC</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-NCC_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-NCC_MS_2018-19.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Melodic)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Hindustani_Melodic_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Hindustani_Melodic_MS_2018-19.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Percussion)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-HM-Percussion_Instrumental_SQP-2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-HM-Percussion_Instrumental_MS-2018-19.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Vocal)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Hindustani_Music-V_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Hindustani_Music-V_MS_2018-19.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music-Melodic Instruments</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Carnatic_Music_MI_SQP_2019.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Carnatic_Music_MI_MS_2019.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music-Percussion Instruments</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Carnatic_Music_PI-SQP-2019.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Carnatic_Music_PI-MS-2019.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music-Vocal</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Carnatic_music_Vocal_SQP 2018_19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Carnatic_music_Vocal_MS 2018_19.pdf" target="_blank">MS</a></b> </td>
+						</tr>						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Painting</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Painting_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Painting_MS_2018-19.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Arabic</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Arabic_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Arabic_MS_2018-19.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							<td height="5" vAlign="top" align="left" width="250"><b>Assamese</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Assamese_SQP_2018-19.pdf" target="_blank">SQP</a></b>							</td>
+							<td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bengali</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-BENGALI_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-BENGALI_MS_2018-19.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bahasa Melayu</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Bahsha-Melayu_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Bahsha-Melayu_MS_2018-19.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bhutia</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Bhutia_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Bhutia_MS_2018-19.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bodo</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Bodo_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <!-- <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/Bodo_MS.pdf" target="_blank">MS</a></b> </td> -->
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>French</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-French_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-French_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>German</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-German_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td>
+							 	<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-German_MS_2018-19.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Gujrati</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Gujrati_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Gujrati_MS_2018-19.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Gurung</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-GURUNG_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Japanese</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Japanese_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td>
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Japanese_MS_2018-19.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Kannada</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-KANNADA_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-KANNADA_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<!-- <tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Kashmiri</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/Kashmiri_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/Kashmiri_MS.pdf" target="_blank">MS</a></b></td>
+						</tr> -->
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Lepcha</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Lepcha_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Limboo</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-LIMBOO_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Malayalam</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Malayalam_SQP_2019.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Malayalam_MS_2019.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Manipuri</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Manipuri_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Manipuri_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>							
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Mizo</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Mizo_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Mizo_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Marathi</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Marathi_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Marathi_MS_2018-19.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Nepali</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Nepali-SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Odia</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-ODIA-SQP-2018-19.PDF" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-ODIA-MS-2018-19.PDF" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Persian</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Persian_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Persian_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Punjabi</b></td>
+					  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Punjabi_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Punjabi_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Rai Language</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Rai_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Russian</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Russain_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Russain_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left"><b>Sanskrit</b></td>
+						  <td height="5" vAlign="top" align="left"><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Sanskrit_SQP_2018-19.pdf" target="_blank">SQP</a></b></td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Sanskrit_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						  </tr>
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Sherpa</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Sherpa_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Sindhi</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X_Sindhi_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+															 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Spanish</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Spanish_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Spanish_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tamil</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Tamil_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Tamil_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tamang</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Tamang_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tangkhul</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-TANGKHUL_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-TANGKHUL_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Telugu AP</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Telugu_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Telugu_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Telugu Telangana</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-TELANGANA_TELUGU_SQP 2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-TELANGANA_TELUGU_MS 2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Thai</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Thai_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Thai_MS_2018-19.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tibetan</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-Tibetan_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Urdu Course A</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-URDU-A_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-URDU-A_MS_2018-19.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Urdu Course B</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-URDU-B_SQP_2018-19.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2018_19/X-URDU-B_MS_2018-19.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+				</table>
+
+</div>
+
+<button class="accordion">2017 - 18</button>
+<div class="panel">
+<table id="customers"
+<tr>										 
+							
+							<th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Subject</b></font></th>	
+							<th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Sample Question Paper</b></font></th>	
+							<th height="5" vAlign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Marking Scheme</b></font></th>		
+						</tr>	
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>Science</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Science_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td>
+							 	<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Science_MS.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>						
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>Elements of Book Keeping and Accountancy</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Elements_Book_Keeping_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Elements_Book_Keeping_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>Elements of Business</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Elements_Business_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Elements_Business_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>English Communicative</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/English_Comm_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/English_Comm_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>English (Language & Literature)</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/English_Lang_Lit_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/English_Lang_Lit_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						
+							<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>e-Publishing & e-office</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/e-Publishing-SQP.pdf" target="_blank">SQP</a>								</b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/e-Publishing-MS.pdf" target="_blank">MS</a>								</b>							 </td>
+						</tr>										
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Foundation of Information Technology</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/FIT-SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250"><b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/FIT-MS.pdf" target="_blank">MS</a>								</b></td>
+						</tr>						
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindi A</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/hindi-A-SQP.pdf" target="_blank">SQP</a>								</b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Hindi-A-MS.pdf" target="_blank">MS</a>								</b>							 </td>
+						</tr>
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindi B</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Hindi-B-SQP.pdf" target="_blank">SQP</a>								</b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Hindi-B-MS.pdf" target="_blank">MS</a>								</b>							 </td>
+						</tr>
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>Home Science</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Home_Sc_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Home_Sc_MS.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Information and Communication Technology</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/ICT-SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/ICT-MS.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>	
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Mathematics</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Maths_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Maths_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>						
+						
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>Social Science</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/SS_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/SS_MS.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>NCC</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/NCC_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/NCC_MS.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Melodic)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/HM-Melodic_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/HM-Melodic_MS.PDF" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Percussion)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/HM-Percussion_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/HM-Percussion_MS.PDF" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Vocal)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/HM-Vocal_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/HM-Vocal_MS.PDF" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Painting</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Painting_SQP.PDF" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Painting_MS.PDF" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Arabic</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Arabic-SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Arabic-MS.PDF" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							<td height="5" vAlign="top" align="left" width="250"><b>Assamese</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Assamese-SQP.pdf" target="_blank">SQP</a></b>							</td>
+							<td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Assamese-MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bengali</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Bengali-SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Bengali-MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bahasa Melayu</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Bhasha_Maleyu_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Bhasha_Maleyu_MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bhutia</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Bhutia_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Bhutia_MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bodo</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Bodo_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Bodo_MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>French</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/French_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/French_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>German</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/German_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td>
+							 	<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/German_MS.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Gujrati</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Gujrati_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td>							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Gurung</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Gurung_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Gurung_MS.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Japanese</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Japanese_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td>
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Japanese_MS.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Kannada</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Kannada_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Kannada_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Kashmiri</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Kashmiri_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Kashmiri_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Lepcha</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Lepcha_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Lepcha_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Limboo</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Limboo_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Limboo_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+							<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Malyalam</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Malayalam_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Malayalam_SQP_AS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Mizo</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Mizo_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Mizo_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Marathi</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Marathi_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Marathi_MS.pdf" target="_blank">MS</a></b>							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Nepali</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Nepali_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Nepali_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Odia</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Odiya_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Odiya_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Persian</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Persian_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Persian_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Punjabi</b></td>
+					  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Punjabi_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Punjabi_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Rai Language</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/RAI_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/RAI_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Russian</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Russian_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Russian_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>
+						  <td height="5" vAlign="top" align="left"><b>Sanskrit</b></td>
+						  <td height="5" vAlign="top" align="left"><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Sanskrit_COMM_SQP.pdf" target="_blank">SQP</a></b></td>
+						  <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Sanskrit_Comm_MS.pdf" target="_blank">MS</a></b></td>
+						  </tr>
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Sherpa</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Sherpa_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Sherpa_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Sindhi</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Sindhi_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+															 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Spanish</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Spanish_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Spanish_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tamil</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Tamil_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Tamil_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tamang</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Tamang_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Tamang_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tangkhul</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Tangkhul_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Tangkhul_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Telugu AP</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Telugu_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Telugu_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Telugu Telangana</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/TT_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/TT_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Thai</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Thai_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Thai_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tibetan</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Tibetan_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Tibetan_MS.pdf" target="_blank">MS</a></b></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Urdu Course A</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Urdua_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Urdua_MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Urdu Course B</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Urdub_SQP.pdf" target="_blank">SQP</a></b>							 </td>
+							 <td><b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS_X_2017_18/Urdub_MS.pdf" target="_blank">MS</a></b> </td>
+						</tr>
+				</table>
+</div>
+
+<button class="accordion">2016 - 17</button>
+<div class="panel">
+<table id="customers">
+<tr>										 
+							
+							<th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Subject</b></font></th>	
+							<th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Sample Question Paper</b></font></th>	
+							<th height="5" vAlign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Marking Scheme</b></font></th>		
+						</tr>	
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>Science</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Sci_SQP_II_X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>
+							 	<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Sci_MS_II_X.pdf" target="_blank">MS-SET2</a></b>
+							
+							 </td>
+						</tr>						
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>Element of Book Keeping and Accountancy</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Elements of Book Keeping and Accountancy.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>														
+							 <td height="5" vAlign="top" align="left" width="250"><b>Elements of Business</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Elements of Business SQP to be uploaded.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>English Communicative</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/SQP English Communicative XII 2016-17.pdf" target="_blank">SQP-SET2</a>
+								</b>					 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/MS English Communicative XII 2016-17.pdf" target="_blank">MS-SET2</a>
+								</b>
+							 </td>
+						</tr>
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>English (Language & Literature)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/SQP-Eng. lang. & literature X 2016-17.pdf" target="_blank">SQP-SET2</a>
+								</b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/MS Eng. lang. & literature X 2016-17.pdf" target="_blank">MS-SET2</a>
+								</b>
+							 </td>
+						</tr>
+							<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>e-Publishing & e-office</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/E Publishing SQP with SQP.pdf" target="_blank">SQP-SET2</a>
+								</b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/E Publishing SQP with MS.pdf" target="_blank">MS-SET2</a>
+								</b>
+							 </td>
+						</tr>										
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Foundation of Information Technology</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/FIT (2016-17) SQP.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/FIT (2016-17) MS.pdf" target="_blank">MS-SET2</a>
+								</b>
+							 </td>
+						</tr>						
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindi A</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Hindi-A Class X QP Public.pdf" target="_blank">SQP-SET2</a>
+								</b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Hindi-A Class X MS Public.pdf" target="_blank">MS-SET2</a>
+								</b>
+							 </td>
+						</tr>
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindi B</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Hindi-B Class X QP.pdf" target="_blank">SQP-SET2</a>
+								</b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Hindi-B Class X MS.pdf" target="_blank">MS-SET2</a>
+								</b>
+							 </td>
+						</tr>
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>Home Science</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/HS-SQP X SA II(Second set).pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/HS-MS X SA II(Second set).pdf" target="_blank">MS-SET2</a></b>
+							 </td>
+						</tr>
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Information and Communication Technology</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/ICT (2016-17) SQP.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/ICT (2016-17) MS.pdf" target="_blank">MS-SET2</a></b>
+							 </td>
+						</tr>	
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Mathematics</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/SQP-Mathametics-Class-X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>						
+						
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>Social Science</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/SQP of Social Science SQP (2016-17).pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/MS 1 of Social Science SQP (2016-17).pdf" target="_blank">MS-SET2</a></b>
+							 </td>
+						</tr>
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>NCC</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/SQP NCC SET 2 Class X 2017.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/MS SQP NCC SET 2 CLASS X 2017.pdf" target="_blank">MS-SET2</a></b>
+							 </td>
+						</tr>
+						
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music (Melodic)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Carnatic Music -Melodic -X- Set-II 2017.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music (Vocal)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Carnatic Music -Vocal-X-Set-II_2017.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Carnatic Music (Percussion)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Carnatic Music-Percussion -X- Set-II 2017.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Melodic)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Hindustani Music -Melodic-X-Set-II_2017.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Percussion)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Hindustani Music-Percussion-X-Set-II_2017.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindustani Music (Vocal)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Hindustani Music-Vocal-X-Set-II_2017.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Painting</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Painting_Set-II_2016-17.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Arabic</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Arabic_SQP.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							<td height="5" vAlign="top" align="left" width="250"><b>Assamese</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Assamese Class X.pdf" target="_blank">SQP-SET2</a></b>
+							</td>
+							<td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bengali</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Bengali Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bahasa Melayu</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/SQP 2016 Class X _bhas.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bhutia</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/bhutia_X_SQP.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bodo</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Bodo Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>French</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/FR_SQP 10_Set2.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>German</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/German_Class_X_Solutions.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>
+							 	<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Class_X_german_ms.pdf" target="_blank">MS-SET2</a></b>
+							
+							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Gujrati</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Gujarati_XQP.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>							 
+							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Gurung</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Gurung Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>							 
+							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Japanese</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Set 2 ans key 2016-17.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/set 2 SQP 2016-17.pdf" target="_blank">MS-SET2</a></b>
+							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Kannada</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/kannada SQPX.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Kashmiri</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/X Kashmiri.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Lepcha</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Lepcha Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Limboo</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Limboo Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+							<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Malyalam</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Malay_X_sqp.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Mizo</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Mizo Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Manipuri</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/ManipuriX_QP.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Marathi</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/QP_marathi.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/MS_marathiX.pdf" target="_blank">MS-SET2</a></b>
+							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Nepali</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Nepali Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Odia</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Odia SQP 2016-17 Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Persian</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Xth A_persian.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Punjabi</b></td>
+					  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/SQP_X_punjabi.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Rai Language</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Rai Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Russian</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/X 2016_russian.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Sanskrit</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Sanskrit SQP Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Sherpa</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Sherpa Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Sindhi</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Sindhi_XQP .pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Sindhi_XMS.pdf" target="_blank">MS-SET2</a></b>
+							 </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Spanish</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Spanish-X-QP.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tamil</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Tamil-QP-X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tamang</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Class X_Tamang.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tangkhul</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Tangkhul Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Telugu AP</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/X-TELUGU_QP.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Telugu Telangana</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/X-Telugu.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Thai</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Thai_SQP X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Tibetan</b></td>
+								<td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Tibetan Class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Urdu Course A</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/Urdu Course A X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+						<tr>					
+							 <td height="5" vAlign="top" align="left" width="250"><b>Urdu Course B</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/web_material/SQP/CLASS X_2016_17/X-URDUCOURSE B.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td>  </td>
+						</tr>
+				</table>
+</div>
+
+<button class="accordion">2015 - 16</button>
+<div class="panel">
+<table id="customers">
+<tr>											 
+							
+							<th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Subject</b></font></th>	
+							<th height="5" valign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Sample Question Paper</b></font></th>	
+							<th height="5" vAlign="top" align="left" width="250"><font FACE="Times New Roman" color="#003366" size="3px"><b>Marking Scheme</b></font></th>		
+						</tr>
+						<tr>							 								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Bengali</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/SQP_Bengali_X.pdf" target="_blank">SQP</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>							 								
+							 <td height="5" vAlign="top" align="left" width="250"><b>French</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/SQP_French_Class_X.pdf" target="_blank">SQP</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>
+							 								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Element of Book Keeping and Accountancy</b></td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/Element of Book Keeping accountancy/SP-1 SA-II ELEMENTS OF BOOK KEEPING AND ACCOUNTANCY.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>	
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Foundation of Information Technology</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/Foundation of Information Technology/FIT SQP (2015-16) Set 2.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindi A</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/Hindi/Hindi a X.pdf" target="_blank">SQP</a>
+								</b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Hindi B</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/Hindi/Hindi b X.pdf" target="_blank">SQP</a>
+								</b>
+							 </td>
+							 <td></td>
+						</tr>
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Information and Communication Technology</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/Information And Communication Technology/ICT Class X SQP (2015-16) Set 2.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>	
+						<tr>								
+							 <td height="5" vAlign="top" align="left" width="250"><b>Mathematics</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/Maths/SQP Maths set -II class X.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>	
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>Painting</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/Painting/Painting Set-II 2015-16.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td></td>
+						</tr>		
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>Science</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/Science/Science_SQP_II_2016_final.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/Science/Science_MS_II_2016_final.pdf" target="_blank">MS-SET2</a></b>
+							 </td>
+						</tr>	
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>Social Science</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/Social Science/Social Science SQP _2015-16_ Set 2.pdf" target="_blank">SQP-SET2</a></b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/Social Science/Social Science SQP _2015-16_ Set 2 MS.pdf" target="_blank">MS-SET2</a></b>
+							 </td>
+						</tr>
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>English (Language & Literature)</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/English/Eng L&L SQPSMS-1&2/Final-SQP2.pdf" target="_blank">SQP-SET2</a>
+								
+								</b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/English/Eng L&L SQPSMS-1&2/Final-SMS2.pdf" target="_blank">MS-SET2</a>
+								</b>
+							 </td>
+						</tr>
+						
+						<tr>						
+							 <td height="5" vAlign="top" align="left" width="250"><b>English Communicative</b></td>
+							  <td height="5" vAlign="top" align="left" width="250">
+								<b><a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/English/Eng Communicative-X/Final-SQP2.pdf" target="_blank">SQP-SET2</a>
+								
+								</b>
+							 </td>
+							 <td height="5" vAlign="top" align="left" width="250">
+								<b>
+								<a href="http://cbseacademic.nic.in/http://cbseacademic.nic.in/web_material/SQP/CLASS X_2015_16/English/Eng Communicative-X/Final-SMS2.pdf" target="_blank">MS-SET2</a>
+								</b>
+							 </td>
+						</tr>
+				</table>
+
+</div>
+
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
