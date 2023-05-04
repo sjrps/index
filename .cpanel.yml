@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home2/sjrps/public_html/
-    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp * $DEPLOYPATH
